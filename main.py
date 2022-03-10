@@ -13,7 +13,11 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
+  
+    if message.content.startswith('!Бен хелп'):
+      await message.channel.send('Что бы начать работу напиши !Бен .........')
 
+  
     if message.content.startswith('!Бен'):
       yes_number = 1
       no_number = 2
