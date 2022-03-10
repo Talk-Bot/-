@@ -14,7 +14,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.startswith(':Бен'):
+    if message.content.startswith('!Бен'):
       yes_number = 1
       no_number = 2
       hm_number = 3
